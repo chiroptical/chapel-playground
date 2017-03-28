@@ -3,16 +3,7 @@ Setting CHPL_HOST_PLATFORM to linux64
 Updating PATH to include /ihome/sam/bmooreii/src/chapel/bin/linux64
                      and /ihome/sam/bmooreii/src/chapel/util
 Updating MANPATH to include /ihome/sam/bmooreii/src/chapel/man
-WARNING: Don't know how to control process->node layout with your mpirun
-WARNING: PROCESS LAYOUT MIGHT NOT MATCH YOUR REQUEST
-*** FATAL ERROR: PMI2_Job_GetId() failed
-WARNING: Ignoring call to gasneti_print_backtrace_ifenabled before gasneti_backtrace_init
-*** FATAL ERROR: PMI2_Job_GetId() failed
-WARNING: Ignoring call to gasneti_print_backtrace_ifenabled before gasneti_backtrace_init
-*** FATAL ERROR: PMI2_Job_GetId() failed
-WARNING: Ignoring call to gasneti_print_backtrace_ifenabled before gasneti_backtrace_init
-*** FATAL ERROR: PMI2_Job_GetId() failed
-WARNING: Ignoring call to gasneti_print_backtrace_ifenabled before gasneti_backtrace_init
---------------------------------------------------------------------------
-mpirun noticed that process rank 3 with PID 11048 on node opa-n5 exited on signal 6 (Aborted).
---------------------------------------------------------------------------
+Pi is approximately: 3.14159
+28
+28
+28

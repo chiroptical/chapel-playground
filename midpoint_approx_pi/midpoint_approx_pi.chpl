@@ -24,3 +24,7 @@ forall d in Domain with (+ reduce sum) {
 
 // Print out Pi
 writeln("Pi is approximately: ", sum * dGrid);
+
+writeln(here.maxTaskPar);                // per-locale parallelism
+writeln(here.numPUs(accessible=true));   // # cores we have access to
+writeln(here.numPUs(accessible=false));  // # cores on the locale
