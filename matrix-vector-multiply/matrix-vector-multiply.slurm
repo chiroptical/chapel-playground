@@ -6,8 +6,11 @@
 #SBATCH --ntasks-per-node=28
 #SBATCH --cluster=mpi
 
+#source /ihome/sam/bmooreii/src/chapel-1.15.0/util/setchplenv.bash
 source /ihome/sam/bmooreii/src/chapel/util/setchplenv.bash
 source ../chapel.sh
+
+rm vis/*
 
 export HFI_NO_CPUAFFINITY=1
 
