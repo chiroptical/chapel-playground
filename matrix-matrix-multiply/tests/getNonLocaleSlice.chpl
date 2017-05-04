@@ -52,18 +52,33 @@ for loc in Locales {
         var sliceColDown: domain(2);
         var sliceColUp: domain(2);
 
-        // define the slice domain
+        // define the slice domains
         on Locales[rowDown] {
           sliceRowDown = A.localSubdomain();
         }
+        on Locales[rowUp] {
+          sliceRowUp = A.localSubdomain();
+        }
+        on Locales[colDown] {
+          sliceColDown = A.localSubdomain();
+        }
+        on Locales[colUp] {
+          sliceColUp = A.localSubdomain();
+        }
   
-        // Define the local distribution
+        // Define the local distributions
         var localRowDown: [sliceRowDown] int = A[sliceRowDown];
+        var localRowUp: [sliceRowUp] int = A[sliceRowUp];
+        var localColDown: [sliceColDown] int = A[sliceColDown];
+        var localColUp: [sliceColUp] int = A[sliceColUp];
 
         // Are we getting rowDown slice?
         writeln(here.id);
         writeln(localRowDown.locale.id);
         writeln(localRowDown);
+        writeln(localRowUp);
+        writeln(localColDown);
+        writeln(localColUp);
         writeln();
     }
 }
